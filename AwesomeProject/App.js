@@ -14,15 +14,15 @@ import FlexDimensionsBasics from './src/components/FlexDimensionsBasics';
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <Text>BANANA</Text>
+      <Text>BANANA</Text>
       <Banana></Banana>
       <Greeting></Greeting>
       <GreetingGroup></GreetingGroup>
       <Blink></Blink>
       <BlinkApp></BlinkApp>
-      <StyleApp></StyleApp> */}
+      <StyleApp></StyleApp>
       <FlexDimensionsBasics></FlexDimensionsBasics>
-      {/* <FixedDimensionsBasics></FixedDimensionsBasics> */}
+      <FixedDimensionsBasics></FixedDimensionsBasics>
     </View>
   )
 }
