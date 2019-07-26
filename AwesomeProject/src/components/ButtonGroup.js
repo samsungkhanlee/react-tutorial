@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, View, Image, TouchableHighlight, TouchableOpacity} from 'react-native';
+import {Button, View, Image, TouchableHighlight, TouchableOpacity, StyleSheet} from 'react-native';
 
 export default class ButtonGroup extends Component {
     constructor(props) {
@@ -23,17 +23,28 @@ export default class ButtonGroup extends Component {
                 <Button onPress={this.alertStateName} title="이름 보기" />
                 <TouchableHighlight onPress={this._onpressButton}>
                     <Image
-                        style={Styles.button}
+                        style={styles.button1}
                         source={require('./button.png')}
-                        />
+                    />
                 </TouchableHighlight>
                 <TouchableOpacity onPress={this._onpressButton}>
                     <Image
-                        style={Styles.button}
+                        style={styles.button2}
                         source={require('./button.png')}
-                        />
+                    />
                 </TouchableOpacity>
             </View>
             )
     }
 }
+
+const styles = StyleSheet.create({
+    button1: {
+      width: 100,
+      height: 100,
+    },
+    button2: {
+        width: 200,
+        height: 200,
+      },
+});
