@@ -7,14 +7,17 @@ import { StyleSheet, Text, View } from 'react-native';
 // import Blink from './src/components/Blink';
 // import BlinkApp from './src/components/BlinkApp';
 // import StyleApp from './src/components/StyleApp';
-import FlexDimensionsBasics from './src/components/FlexDimensionsBasics';
+// import FlexDimensionsBasics from './src/components/FlexDimensionsBasics';
 // import FixedDimensionsBasics from './src/components/FixedDimensionsBasics';
+// import BaseTextInput from './src/components/BaseTextInput';
+import ButtonGroup from './src/components/ButtonGroup';
+
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>BANANA</Text>
+      {/* <Text>BANANA</Text>
       <Banana></Banana>
       <Greeting></Greeting>
       <GreetingGroup></GreetingGroup>
@@ -22,7 +25,9 @@ export default function App() {
       <BlinkApp></BlinkApp>
       <StyleApp></StyleApp>
       <FlexDimensionsBasics></FlexDimensionsBasics>
-      <FixedDimensionsBasics></FixedDimensionsBasics>
+      <FixedDimensionsBasics></FixedDimensionsBasics> */}
+      {/* <BaseTextInput></BaseTextInput> */}
+      <ButtonGroup></ButtonGroup>
     </View>
   )
 }
