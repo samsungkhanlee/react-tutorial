@@ -1,18 +1,19 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, SectionList} from 'react-native';
 
-export default class SectionList extends Component {
+
+export default class SectionLists extends Component {
     render() {
         return(
-        <View style= {StyleSheet.container}>
+        <View>
             <SectionList
                 sections={[
                     {title: 'A', data: ['a']},
                     {title: 'B', data: ['b', 'c','d','e','f']}
                 ]}
-                renderItem={({item}) => <Text style={style.item}>{item}</Text>}
+                renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
                 renderSectionHeader={
-                    ({section}) => <Text style={Styles.renderSectionHeader}>{section.title}</Text>
+                    ({section}) => <Text style={styles.renderSectionHeader}>{section.title}</Text>
                 }
                 keyExtractor={(item, index) => index}
                 />
@@ -27,4 +28,7 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       fontSize: 10,
     },
+    item :{
+        
+    }
   });

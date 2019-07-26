@@ -7,17 +7,17 @@ export default class FlatListBasics extends Component {
         <View style= {{flex: 1, paddingTop: 22}}>
             <FlatList
                 data={[
-                    {key: 'a'},
-                    {key: 'b'},
-                    {key: 'c'},
-                    {key: 'd'},
-                    {key: 'e'},
-                    {key: 'f'},
-                    {key: 'g'},
-                    {key: 'h'},
-                    {key: 'i'},
-                    {key: 'j'},
-                    {key: 'k'},
+                    {key: 'a', univ: 'KNU'},
+                    {key: 'b', univ: 'KNU'},
+                    {key: 'c', univ: 'KNU'},
+                    {key: 'd', univ: 'KNU'},
+                    {key: 'e', univ: 'KNU'},
+                    {key: 'f', univ: 'KNU'},
+                    {key: 'g', univ: 'KNU'},
+                    {key: 'h', univ: 'KNU'},
+                    {key: 'i', univ: 'KNU'},
+                    {key: 'j', univ: 'KNU'},
+                    {key: 'k', univ: 'KNU'},
                 ]}
                 renderItem={
                     ({item}) => {

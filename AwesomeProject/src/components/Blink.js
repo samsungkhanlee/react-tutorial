@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 
 export default class Blink extends Component {
     constructor(props) {
@@ -9,11 +9,11 @@ export default class Blink extends Component {
 
     setInterval(()=>{
         this.setState({showText: !this.state.showText})
-    }, 500)
+    }, 300)
     }
 
     render() {
-        let display = this.state.showText ? this.props.text : ' ';
+        let display = this.state.showText ? this.props.text : '';
         return <Text>{display}</Text>
     }
 }
