@@ -10,7 +10,10 @@ import { StyleSheet, Text, View } from 'react-native';
 // import FlexDimensionsBasics from './src/components/FlexDimensionsBasics';
 // import FixedDimensionsBasics from './src/components/FixedDimensionsBasics';
 // import BaseTextInput from './src/components/BaseTextInput';
-import ButtonGroup from './src/components/ButtonGroup';
+// import ButtonGroup from './src/components/ButtonGroup';
+// import FlatListBasics from './src/components/FlatListBasics';
+import SectionList from './src/components/SectionList';
+
 
 
 
@@ -27,7 +30,9 @@ export default function App() {
       <FlexDimensionsBasics></FlexDimensionsBasics>
       <FixedDimensionsBasics></FixedDimensionsBasics> */}
       {/* <BaseTextInput></BaseTextInput> */}
-      <ButtonGroup></ButtonGroup>
+      {/* <ButtonGroup></ButtonGroup>
+      <FlatListBasics></FlatListBasics> */}
+      <SectionList></SectionList>
     </View>
   )
 }
