@@ -20,7 +20,7 @@ export default class ButtonGroup extends Component {
                 <Button onPress={()=>alert('click')} title="눌러주세요" />
                 <Button onPress={this.onPressButton1} title="버튼 2 클릭" 
                         color="#841584" />
-                <Button onPress={this.alertStateName} title="이름 보기" />
+                <Button onPress={this.alertStateName.bind(this)} title="이름 보기" />
                 <TouchableHighlight onPress={this._onpressButton}>
                     <Image
                         style={styles.button1}
